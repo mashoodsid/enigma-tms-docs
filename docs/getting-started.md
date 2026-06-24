@@ -1,26 +1,10 @@
 # Quick Start
 
-**Audience:** Anyone. Prerequisites: a running Frappe v15 bench with at least one company configured.
-
-This walkthrough takes you from a fresh install to a completed Transport Order → Trip → Invoice in about 15 minutes using the demo company "BK Transport Co."
+**Audience:** All users. This walkthrough takes you from first login to a completed Transport Order → Trip → Invoice in about 15 minutes.
 
 ---
 
-## Step 1 — Install the App
-
-```bash
-# From your bench directory
-bench get-app https://github.com/your-org/transport_management
-bench --site tms.yourdomain.com install-app transport_management
-bench --site tms.yourdomain.com migrate
-bench restart
-```
-
-See [Installation](installation.md) for full prerequisites and post-install checklist.
-
----
-
-## Step 2 — Seed Master Data
+## Step 1 — Seed Master Data
 
 Before creating orders you need at minimum:
 
@@ -39,7 +23,7 @@ Before creating orders you need at minimum:
 
 ---
 
-## Step 3 — Create a Transport Order
+## Step 2 — Create a Transport Order
 
 1. Go to **Transport Operations → Transport Order → New**
 2. Select **Customer** (e.g. "Arabian Logistics Co.")
@@ -56,7 +40,7 @@ The order status moves to `Confirmed`. A **Create Trip** button appears.
 
 ---
 
-## Step 4 — Create and Dispatch the Trip
+## Step 3 — Create and Dispatch the Trip
 
 1. Click **Create Trip** on the submitted Transport Order
 2. The Trip form opens pre-filled with the customer, route, and stops
@@ -71,7 +55,7 @@ The trailer status updates automatically to `On Trip`.
 
 ---
 
-## Step 5 — Record Proof of Delivery
+## Step 4 — Record Proof of Delivery
 
 1. Open the Trip form
 2. In the **Stops** table, find the Drop stop
@@ -81,7 +65,7 @@ The trailer status updates automatically to `On Trip`.
 
 ---
 
-## Step 6 — Generate Invoice
+## Step 5 — Generate Invoice
 
 1. From the completed Trip (or its parent Transport Order), click **Create Sales Invoice**
 2. The invoice pre-fills with line items: Freight Linehaul, Fuel Surcharge (and any extras)
@@ -111,7 +95,7 @@ Trip profit = selling total − buying total, computed on the Trip form in real 
 
 | Topic | Link |
 |---|---|
-| Full doctype reference | [Architecture](architecture.md) |
-| Pricing formula details | [Pricing Engine](pricing-engine.md) |
 | Setting up rate cards | [Rate Cards](rate-cards.md) |
-| Role-specific guides | [User Guides](user-guides/order-desk.md) |
+| Order Desk step-by-step | [Order Desk Guide](user-guides/order-desk.md) |
+| Dispatch and trip management | [Dispatcher Guide](user-guides/dispatcher.md) |
+| Invoicing and reports | [Finance Guide](user-guides/finance.md) |

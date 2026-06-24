@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
 # Enigma TMS
@@ -70,15 +71,12 @@ Transport Order  ──►  Trip (Dispatch)  ──►  POD  ──►  Invoicin
 
 | I want to… | Go to |
 |---|---|
-| Install the app on a Frappe bench | [Installation](installation.md) |
 | Walk through end-to-end in 15 minutes | [Quick Start](getting-started.md) |
-| Understand the data model and pricing engine | [Architecture](architecture.md) |
 | Create a Transport Order | [Order Desk Guide](user-guides/order-desk.md) |
 | Assign trips and manage dispatch | [Dispatcher Guide](user-guides/dispatcher.md) |
 | Generate invoices and run reports | [Finance Guide](user-guides/finance.md) |
 | Set up rate cards, routes, and assets | [Configuration Guide](configuration.md) |
-| Look up Python APIs and hooks | [API Reference](api-reference.md) |
-| Deploy to a production server | [Deployment Guide](deployment.md) |
+| Troubleshoot a common issue | [Troubleshooting](troubleshooting.md) |
 
 ---
 
@@ -86,11 +84,8 @@ Transport Order  ──►  Trip (Dispatch)  ──►  POD  ──►  Invoicin
 
 | Attribute | Value |
 |---|---|
-| Frappe version | v15.56.1+ |
-| Python | 3.10+ |
-| Database | MariaDB 10.6+ |
-| App ID | `transport_management` |
 | Modules | Transport Setup · Transport Pricing · Transport Operations |
-| Doctypes | 16 (6 masters, 2 rate cards, 3 transactions, 5 child tables) |
 | Roles | Order Desk · Dispatcher · Transport Finance · Transport Manager |
-| Live demo | [tms.enigmaerp.com](https://tms.enigmaerp.com) |
+| VAT | KSA 15% (ZATCA-ready) |
+| Currency | SAR |
+| Languages | English (Arabic localisation planned) |

@@ -1,9 +1,9 @@
 site_name: Enigma TMS
 site_description: Transport Management System for Saudi Arabia trailer fleet operations
-site_url: https://mashoodsiddiqi.github.io/enigma-tms-docs/
-repo_url: https://github.com/mashoodsiddiqi/enigma-tms-docs
+site_url: https://mashoodsid.github.io/enigma-tms-docs/
+repo_url: https://github.com/mashoodsid/enigma-tms-docs
 repo_name: enigma-tms-docs
-edit_uri: edit/main/docs/
+edit_uri: ""
 
 theme:
   name: material
@@ -24,7 +24,6 @@ theme:
     text: Inter
     code: JetBrains Mono
   icon:
-    repo: fontawesome/brands/github
     logo: material/truck-delivery
   favicon: assets/favicon.png
   features:
@@ -85,14 +84,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
-    - Quick Start: getting-started.md
-    - Installation: installation.md
-  - Architecture:
-    - System Overview: architecture.md
-    - Data Model: data-model.md
-    - Pricing Engine: pricing-engine.md
-    - Finance Integration: finance-integration.md
+  - Quick Start: getting-started.md
   - User Guides:
     - Order Desk: user-guides/order-desk.md
     - Dispatcher: user-guides/dispatcher.md
@@ -102,20 +94,12 @@ nav:
     - Initial Setup: configuration.md
     - Rate Cards: rate-cards.md
     - Roles & Permissions: roles.md
-  - Developer Reference:
-    - API Reference: api-reference.md
-    - Hooks & Events: hooks.md
-    - Customization: customization.md
-  - Deployment:
-    - Deployment Guide: deployment.md
-    - Troubleshooting: troubleshooting.md
+  - Troubleshooting: troubleshooting.md
+
+exclude_docs: |
+  dev/
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/mashoodsiddiqi
-  version:
-    provider: mike
   analytics:
     feedback:
       title: Was this page helpful?
@@ -127,6 +111,6 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: Thanks for your feedback! Help us improve by opening an issue.
+          note: Thanks for your feedback!
 
 copyright: Copyright &copy; 2026 Enigma TMS
